@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>demo</title>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<link rel="stylesheet" type="text/css" href="by.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li class="cat">
+				<span><a href="index.htm">Home</a></span>
+			</li>
+			<li class="cat">
+				<span><a href="welcome_letter_2012.pdf">Welcome Letter</span>
+			</li>
+			<li class="cat">
+				<span><a>Wardens & Tutors</a></span>
+				<ul>
+					<li class="subCat"><a href="http://www.polyu.edu.hk/hall/hunghom/by_warden.html">Warden</a></li>
+					<li class="subCat"><a href="Contact/Warden_Tutors.html">Tutors</a></li>
+				</ul>
+			</li>
+			<li class="cat">
+				<span><a href="club_coordinator.pdf">Clubs</a></span>
+			</li>
+			<li class="cat">
+				<span><a>Activities</a></span>
+			</li>
+			<li class="cat">
+				<span><a>Contact</a></span>
+				<ul>
+					<li class="subCat"><a href="Contact/roster.html">Duty rosters</a></li>
+					<li class="subCat"><a href="tutor_zone.pdf">Tutor zone</a></li>
+				</ul>
+			</li>
+			<li class="cat">
+				<span><a>Links</a></span>
+				<ul>
+					<li class="subCat"><a href="http://www.polyu.edu.hk">PolyU</a></li>
+					<li class="subCat"><a href="http://www.polyu.edu.hk/ro">Research Office</a></li>
+					<li class="subCat"><a href="http://www.polyu.edu.hk/hall">Student Hall</a></li>
+					<li class="subCat"><a href="http://www.polyu.edu.hk/~cssa">CSSA</a></li>
+				</ul>
+			</li>
+			<li class="followUs">
+				<span>
+					<a id="followUs">Follow us
+						<ul>
+							<li class="dropdownArrow">
+								<span class="inner"></span>
+							</li>
+							<li>Twitter</li>
+							<li>Facebook</li>
+							<li>新浪微博</li>
+						</ul>
+					</a>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<div id="main">
+		<h1>Boyan Hall Welcomes You</h1>
+		<div id="slidesWrapper">
+			<ul id="slides"></ul>
+		</div>
+	</div>
+	<div id="intro">
+		<h2>The world is not only in your books or maps but it’s here in your Boyan.</h2>
+		<p>
+			Boyan hall is a research student hall in HK PolyU. We're working hard in our research as well as enjoying the most of our life throughout the hall activities. Experience it!
+		</p>
+	</div>
+	<div id="seperator">
+		See what's happening in our clubs, teams, hang-outs.
+	</div>
+	<div id="widgets">
+		<div class="widgetItem">
+			<div>
+				<ul id="twitter"></ul>
+			</div>
+		</div>
+		<div class="widgetItem">
+			<div class="wLeft">
+				<img src="images/clubs.jpg" class="boxBack" />
+			</div>
+			<div class="wRight">
+				<div class="desc">
+					<h2>Geek is a new Fashion</h2>
+					<p>
+						Try out our clubs and sport teams.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="widgetItem">
+			<div class="wLeft">
+				<div class="desc">
+					<h2>Discover us on YouTube</h2>
+					<p>
+						You are watching us on Youtube.
+					</p>
+					<div id="youtubeList"></div>
+				</div>
+			</div>
+			<div class="wRight">
+				<div id="ytplayer" class="boxBack">
+					<div style="width:440px;height:247px;text-align:center;font-size:30px;color:#CCC;line-height:247px;">Discover us</div>
+				</div>
+			</div>
+		</div>
+		<div class="widgetItem last">
+			<div id="fb-root"></div>
+			<div class="fb-like-box boxBack" data-href="http://www.facebook.com/Boyaner" data-width="920" data-height="247" data-show-faces="true" data-stream="false" data-border-color="#FFF" data-header="false"></div>
+		</div>
+		<div id="footer">
+			Boyan &copy; 2013<br />
+			Designed and built by <a href="http://lichgo.com">lichgo</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="by.js"></script>
+	<script type="text/javascript">
+		var slides = BY.config(1, 5).slideShow();
+		slides.clickToShow().start();
+		BY.twitter({ url: '' })
+		  .loadYouTube('https://gdata.youtube.com/feeds/api/playlists/PLXUiIcBdFfrry9TCWjknbKHKXSoi4UsvU?v=2&alt=json', true)
+		  .loadFb();
+	</script>
+</body>
+</html>

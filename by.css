@@ -1,0 +1,262 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	background: #F1F3F5;
+}
+h1, h2 {
+	margin: 0 0 5px 0;
+	color: #222;
+}
+p, ul {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: #3B5998;
+}
+ul.list {
+	margin-top: 20px;
+	font-size: 14px;
+}
+ul.list li.playing {
+	font-weight: bold;
+}
+#nav {
+	width: 100%;
+	height: 40px;
+	background: #222;
+	background: linear-gradient(to bottom, #222, #111);
+	background: -webkit-linear-gradient(top, #222, #111);
+	font-size: 12px;
+	font-family: Arial;
+	position: fixed;
+	z-index: 999;
+}
+#nav a {
+	color: #CCC;
+	cursor: pointer;
+}
+#nav a:hover {
+	color: #FFF;
+}
+#nav ul {
+	width: 960px;
+	position: relative;
+	left: 50%;
+	margin-left: -520px;
+	list-style-type: none;
+}
+#nav ul li.cat {
+	float: left;
+	padding-right: 20px;
+	line-height: 40px;
+	position: relative;
+}
+#nav ul li.cat ul {
+	position: absolute;
+	left: 520px;
+	top: 40px\9;
+	background: #000;
+	color: #FFF;
+	width: 100px;
+	z-index: 999;
+	display: none;
+	padding-right: 20px;
+	padding-left: 20px\9;
+}
+#nav ul li.cat:hover ul {
+	display: block;
+}
+#nav ul li.followUs {
+	float: right;
+	position: relative;
+	line-height: 40px;
+}
+#nav ul li.followUs ul {
+	display: none;
+	position: absolute;
+	left: 350px;
+	left: 411px\9;
+	padding-left: 20px\9;
+	top: 43px;
+	background: #FFF;
+	width: 180px;
+	z-index: 999;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	border: 1px\9 solid\9 #DDD\9;
+}
+li.dropdownArrow {
+	line-height: 7px;
+	position: relative;
+	top: -17px;
+	left: 150px;
+	width: 14px;
+}
+li.dropdownArrow .inner {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #FFF;
+}
+#nav ul li.followUs a.focus {
+	text-decoration: underline;
+	color: #FFF;
+}
+#nav ul li.followUs a.focus ul {
+	display: block;
+	color: #666;
+	text-decoration: none;
+}
+#main {
+	width: 100%;
+	background: #21365D;
+	background: linear-gradient(0deg, #0E1831 0%, #21365D 100%) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(90deg, #0E1831 0%, #21365D 100%);
+	padding-top: 60px;
+}
+#main h1 {
+	text-align: center;
+	font-size: 65px;
+	color: #FFF;
+	text-shadow: 1px 2px #000;
+}
+#twitter {
+	font-size: 14px;
+	list-style-type: none;
+}
+#twitter span.date {
+	float: right;
+	padding-right: 30px;
+}
+#slidesWrapper {
+	width: 960px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	left: 50%;
+	margin-left: -480px;
+}
+#slides { 
+	position: relative;
+	width: 1920px; 
+	list-style-type: none;
+	margin: 0;
+}
+#slides li.slideItem { 
+	position: absolute;
+	left: 960px;
+	top: 0px;
+}
+#slides.moving li.slideItem {
+	transition-duration: 300ms;
+	-moz-transition-duration: 300ms;
+	-o-transition-duration: 300ms;
+	-webkit-transition-duration: 300ms;
+}
+#slides li.slideItem span { 
+	position: absolute;
+	right: 50px;
+	top: 250px;
+	color: white;
+	font-family: "Arial";
+	font-size: 20px;
+	font-weight: bold;
+}
+#intro {
+	width: 900px;
+	position: relative;
+	left: 50%;
+	margin-left: -480px;
+	background: #FFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 0 0 5px 5px;
+	padding: 30px;
+	border-style: solid\9;
+	border-width: 1px\9;
+	border-top-width: 0\9;
+	border-color: #DDD\9;
+}
+#intro h2 {
+	font-weight: normal;
+}
+#seperator {
+	font-size: 30px;
+	text-align: center;
+	color: #3b5998;
+	margin: 60px 0 40px 0;
+}
+#widgets {
+	width: 960px;
+	position: relative;
+	left: 50%;
+	margin-left: -480px;
+}
+#widgets .boxBack {
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	background: #FFF;
+	display: block;
+}
+.widgetItem {
+	background: url(images/line.png) bottom no-repeat;
+	position: relative;
+	padding: 40px 0;
+}
+.widgetItem.last {
+	background: none;
+}
+.wLeft, .wRight {
+	width: 50%;
+	min-height: 290px;
+}
+.wLeft div.desc {
+	padding-right: 40px;
+}
+.wRight div.desc {
+	padding-left: 40px;
+}
+.wRight {
+	position: absolute;
+	left: 50%;
+	top: 40px;
+}
+#footer {
+	font-size: 12px;
+	margin: 40px 0 30px 0;
+	padding-top: 10px;
+	border-top: 1px solid #BBB;
+	width: 960px;
+	position: relative;
+	left: 50%;
+	margin-left: -480px;
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: none;
+	color: #FFF;
+}
+#wrapper #overlay {
+	width: 100%;
+	height: 100%;
+	background:  #000;
+	opacity: 0.9;
+	position: absolute;
+	z-index: 998;
+}
+#wrapper #container {
+	position: relative;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	width: 960px;
+	height: 500px;
+	margin-left: -480px;
+	margin-top: -250px;
+	text-align: center;
+}
